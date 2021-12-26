@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="JvhCB4H5K992pfeFJU5AXm4nehlL4SkRulaN7EhK">
+    <meta name="description" content="Developer Page">
+    <meta name="keywords" content="">
+    <title>Developer </title>
+
+    <link rel="stylesheet" type="text/css" href="https://freedompay.ca/resources/views/Themes/modern/assets/public/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://freedompay.ca/resources/views/Themes/modern/assets/public/css/customstyle.css">
+<link rel="stylesheet" type="text/css" href="https://freedompay.ca/resources/views/Themes/modern/assets/public/css/fontawesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://freedompay.ca/resources/views/Themes/modern/assets/public/css/themify-icons.css">
+
+
+    <!---title logo icon-->
+    <link rel="javascript" href="https://freedompay.ca/public/frontend/js/respond.js">
+
+    <!---favicon-->
+            <link rel="shortcut icon" href="https://freedompay.ca/public/images/logos/1631294126_favicon.jpg" />
+    
+    <script type="text/javascript">
+        var SITE_URL = "https://freedompay.ca";
+    </script>
+</head>
+
+<body class="send-money request-page">
+    <!-- Start scroll-top button -->
+    <div id="scroll-top-area">
+        <a href="https://freedompay.ca/developer#top-header"><i class="ti-angle-double-up" aria-hidden="true"></i></a>
+    </div>
+    <!-- End scroll-top button -->
+    
+    <!--Start Header-->
+    <header id="js-header-old">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+                            <a style="width: 205px;overflow: hidden;"  class="navbar-brand" href=" https://freedompay.ca ">
+                    <img src="https://freedompay.ca/public/images/logos/1636847754_logo.png" alt="logo" class="img-fluid">
+                </a>
+            
+                            <button aria-label="navbar" class="navbar-toggler bg-white text-28" data-toggle="modal" data-target="#left_modal">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-toggler-right" id="navbarSupportedContent">
+                    <ul class="navbar-nav  my-navbar">
+                        <li class="nav-item "><a href="https://freedompay.ca" class="nav-link">Home</a></li>
+                        <li class="nav-item "><a href="https://freedompay.ca/send-money" class="nav-link">Send</a></li>
+                        <li class="nav-item "><a href="https://freedompay.ca/request-money" class="nav-link">Request</a></li>
+                                                                                                                     <li class="nav-item auth-menu"> <a href="https://freedompay.ca/login" class="nav-link">Login</a></li>
+                            <li class="nav-item auth-menu"> <a href="https://freedompay.ca/register" class="nav-link">Register</a></li>
+                                            </ul>
+                </div>
+
+            
+            <div id="quick-contact" class="collapse navbar-collapse">
+                <ul class="ml-auto">
+                                                                        <li> <a href="https://freedompay.ca/login">Login</a> </li>
+                            <li> <a href="https://freedompay.ca/register">Register</a> </li>
+                                                            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Modal Window -->
+    <div class="modal left fade" id="left_modal" tabindex="-1" role="dialog" aria-labelledby="left_modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0 m-nav-bg">
+                                            <div>
+                                                        <a class="navbar-brand" href=" https://freedompay.ca ">
+                                <img src="https://freedompay.ca/public/images/logos/1636847754_logo.png" alt="logo" class="logo">
+                            </a>
+                            
+                        </div>
+                    
+                    <button type="button" class="close text-28" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="mobile-side">
+                        <li><a href="https://freedompay.ca">Home</a></li>
+                        <li><a href="https://freedompay.ca/send-money">Send</a></li>
+                        <li><a href="https://freedompay.ca/request-money">Request</a></li>
+                                                                                                                     <li> <a href="https://freedompay.ca/login">Login</a></li>
+                            <li> <a href="https://freedompay.ca/register">Register</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!--End Header-->
+
+    <!--Start Developer section-->
+<section class="section-06 sector-guides">
+    <div class="container">
+        <div class="mt30">
+            <div class="express-list">
+                <ul>
+                    <li>
+                        <a href="https://freedompay.ca/developer?type=standard">
+                            Standard
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active33" href="https://freedompay.ca/developer?type=express">
+                            Express
+                        </a>
+                    </li>
+                                    </ul>
+            </div>
+            <p>
+            </p>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Section -->
+
+<!--Start Developer section-->
+<section class="section-06 sector-guides mt50">
+    <div class="container">
+        <div class="h4 mt30 mb20 text-center">
+            FreeDom Pay Express Payment Gateway Documentation
+        </div>
+        <hr/>
+        <div class="guidepara-style mt30">
+            <div class="guide-header">
+                <h3 class="guideTitle-color">
+                    <strong>
+                        Payer
+                    </strong>
+                </h3>
+            </div>
+            <p>
+                If payer wants to fund payments using FreeDom Pay, set payer to FreeDom Pay.
+                <br>
+                (Other payment method ex: paypal, stripe, coinpayments etc not available yet).
+            </br>
+        </p>
+    </div>
+    <div class="guidepara-style mt30">
+        <div class="guide-header">
+            <h3 class="guideTitle-color">
+                <strong>
+                    Amount
+                </strong>
+            </h3>
+        </div>
+        <p>
+            Specify a payment amount and the currency.
+        </p>
+    </div>
+    <div class="guidepara-style mt30">
+        <div class="guide-header">
+            <h3 class="guideTitle-color">
+                <strong>
+                    Transaction
+                </strong>
+            </h3>
+        </div>
+        <p>
+            It’s a Transaction resource where amount object has to set.
+        </p>
+    </div>
+    <div class="guidepara-style mt30">
+        <div class="guide-header">
+            <h3 class="guideTitle-color">
+                <strong>
+                    RedirectUrls
+                </strong>
+            </h3>
+        </div>
+        <p>
+            Set the urls where buyer should redirect after transaction is completed or cancelled.
+        </p>
+    </div>
+    <div class="guidepara-style mt30">
+        <div class="guide-header">
+            <h3 class="guideTitle-color">
+                <strong>
+                    payment
+                </strong>
+            </h3>
+        </div>
+        <p>
+            It’s a payment resource where all
+            <strong>
+                Payer, Amount, RedirectUrls and Credentials of merchant
+            </strong>
+                (Client ID and Client Secret) have to set. After initialized into
+            <strong>
+                payment
+            </strong>
+                object, need to call create method. It will generate a redirect URL. Users have to redirect into this URL to complete the transaction.
+        </p>
+    </div>
+    <br>
+    <div class="mt30">
+        <h3>
+            <strong>
+                <ins>
+                    Installation Instruction :
+                </ins>
+            </strong>
+        </h3>
+    </div>
+    <div class="mt30">
+        <div class="composer-box">
+            Click download for the package
+            <a href="https://freedompay.ca/download/package" style="color:rgba(74, 111, 197, 0.9) !important">
+                download
+            </a>
+        </div>
+    </div>
+    <div class="guidepara-style mt30">
+        <div class="guideBox-color">
+            
+            <h4>
+                Now, go to
+                <strong>
+                    php-sdk/src/PayMoney/Rest/Connection.php,
+                </strong>
+                then change
+                <strong>
+                    BASE_URL
+                </strong>
+                value to your domain name
+                <br>
+
+                <span style="color:#707070;">
+                (i.e: If the domain is - &#039;your-domain.com&#039; then,
+                <strong>
+                    define( 'BASE_URL' , 'http://your-domain.com/' )
+                </strong>
+                )</span>
+
+            </br>
+            </h4>
+        </div>
+    </div>
+    <div class="mt30">
+        <div class="h4">
+            Example :
+        </div>
+    </div>
+<div class="guideBox-color mt30">
+<pre style="display:block;">
+    <span style="color:#cf1ffb;">require</span> <span style="color:#55bb17;">'vendor/autoload.php'</span>;
+
+    <span style="color:#707070;">//if you want to change the namespace/path from 'PayMoney' - lines[1-5] - to your desired name,
+    i.e. (use PayMoney\Api\Amount; to use MyDomain\Api\Amount;), then you must change the folders name that holds
+    the API classes as well as change the property 'PayMoney' in (autoload->psr-0) of (php-sdk/composer.json) file to your
+    desired name and run "composer dump-autoload" command from sdk root</span>
+
+    <span style="color:#cf1ffb;">use</span> PayMoney\Api\Payer;
+    <span style="color:#cf1ffb;">use</span> PayMoney\Api\Amount;
+    <span style="color:#cf1ffb;">use </span>PayMoney\Api\Transaction;
+    <span style="color:#cf1ffb;">use</span> PayMoney\Api\RedirectUrls;
+    <span style="color:#cf1ffb;">use</span> PayMoney\Api\Payment;
+
+    <span style="color:#707070;">//Payer Object</span>
+    <span style="color:#fd8f00;">$payer</span> = <span style="color:#cf1ffb;">new</span> Payer();
+    <span style="color:#fd8f00;">$payer</span>->setPaymentMethod(<span style="color:#55bb17;">'PayMoney'</span>); <span style="color:#707070;">//preferably, your system name, example - PayMoney</span>
+
+    <span style="color:#707070;">//Amount Object</span>
+    <span style="color:#fd8f00;">$amountIns</span> = <span style="color:#cf1ffb;">new</span> Amount();
+    <span style="color:#fd8f00;">$amountIns</span>->setTotal(20)->setCurrency(<span style="color:#55bb17;">'USD'</span>); <span style="color:#707070;">//must give a valid currency code and must exist in merchant wallet list</span>
+
+    <span style="color:#707070;">//Transaction Object</span>
+    <span style="color:#fd8f00;">$trans</span> =<span style="color:#cf1ffb;"> new</span> Transaction();
+    <span style="color:#fd8f00;">$trans</span>->setAmount(<span style="color:#fd8f00;">$amountIns</span>);
+
+    <span style="color:#707070;">//RedirectUrls Object</span>
+    <span style="color:#fd8f00;">$urls</span> = <span style="color:#cf1ffb;">new</span> RedirectUrls();
+    <span style="color:#fd8f00;">$urls</span>->setSuccessUrl(<span style="color:#55bb17;">'http://your-merchant-domain.com/example-success.php'</span>) <span style="color:#707070;">//success url - the merchant domain page,
+    to redirect after successful payment, see sample example-success.php file in sdk root,
+    example - http://techvill.net/PayMoney_sdk/example-success.php</span>
+    ->setCancelUrl(<span style="color:#55bb17;">'http://your-merchant-domain.com/'</span>); <span style="color:#707070;">//cancel url - the merchant domain page, to redirect after
+    cancellation of payment, example -  http://techvill.net/PayMoney_sdk/</span>
+
+    <span style="color:#707070;">//Payment Object</span>
+    <span style="color:#fd8f00;">$payment</span> = <span style="color:#cf1ffb;">new</span> Payment();
+    <span style="color:#fd8f00;">$payment</span>->setCredentials([ <span style="color:#707070;">//client id &amp; client secret, see merchants->setting(gear icon)</span>
+    <span style="color:#55bb17;">'client_id'</span> => <span style="color:#55bb17;">'place your client id here'</span>, <span style="color:#707070;">//must provide correct client id of an express merchant</span>
+    <span style="color:#55bb17;">'client_secret'</span> => <span style="color:#55bb17;">'place your client secret here'</span> <span style="color:#707070;">//must provide correct client secret of an express merchant</span>
+    ])->setRedirectUrls(<span style="color:#fd8f00;">$urls</span>)
+    ->setPayer(<span style="color:#fd8f00;">$payer</span>)
+    ->setTransaction(<span style="color:#fd8f00;">$trans</span>);
+
+    <span style="color:#cf1ffb;">try</span> {
+    <span style="color:#fd8f00;"> $payment</span>->create(); <span style="color:#707070;">//create payment</span>
+     header(<span style="color:#55bb17;">"Location: "</span>.<span style="color:#fd8f00;">$payment</span>->getApprovedUrl()); <span style="color:#707070;">//checkout url</span>
+    }<span style="color:#cf1ffb;"> catch</span> (Exception <span style="color:#fd8f00;">$ex</span>) {
+    <span style="color:#cf1ffb;"> print</span> <span style="color:#fd8f00;">$ex</span>;
+    <span style="color:#cf1ffb;"> exit;</span>
+    }
+</pre>
+
+    <div class="guidepara-style mt30">
+        <div class="guide-header">
+            <h3 class="guideTitle-color">
+                <strong>
+                    Optional Instructions
+                </strong>
+            </h3>
+        </div>
+        <br>
+        <div>
+            <h4>
+                If you don&#039;t see changes after configuring and extracting SDK, go to your SDK root and run the commands below:-
+                <p style="color: #c64e25;"><b>composer clear-cache</b></p>
+                <p style="color: #c64e25;"><b>composer install</b></p>
+                <p style="color: #c64e25;"><b>composer dump-autoload</b></p>
+            </h4>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+</div>
+</section>
+<!--End Section-->
+
+
+
+    <!--Start Footer-->
+    <section class="bg-image footer text-white mt-5">
+    <div class="bg-dark">
+        <div class="container pt-60 pb-3">
+            <div class="row  justify-content-between">
+                <div class="col-xl-5">
+                    <div>
+                        <img src="https://freedompay.ca/public/images/logos/1636847754_logo.png" class="mw-200" alt="logo">
+                    </div>
+
+                    <p class="mt-3">FreeDom Pay, a secured online payment gateway that allows payment in multiple currencies easily, safely and securely.</p>
+                </div>
+
+                <div class="col-xl-7 pt-3">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div>
+                            <h4>Quick Links</h4>
+                            <ul class="link mt-3">
+                                <li class="mt-2"><a href="https://freedompay.ca" class="text-white">Home</a></li>
+                                <li class="mt-2"><a href="https://freedompay.ca/send-money" class="text-white">Send</a></li>
+                                <li class="mt-2"><a href="https://freedompay.ca/request-money" class="text-white">Request</a></li>
+                                <li class="mt-2"><a href="https://freedompay.ca/developer" class="text-white">Developer</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul class="link mt-4 pt-1">
+                                                                                                                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-between">
+                <div>
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-wrap social-icons mt-5">
+                                                    </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="d-flex justify-content-center pt-4">
+
+                                                                                    <div class="p-2 pl-4 pr-4">
+                                    <a href="https://play.google.com/store/apps/details?id=com.freedom.pay"><img src="https://freedompay.ca/public/uploads/app-store-logos/1630714502.png" class="img-responsive" width="125" height="50"/></a>
+                                </div>
+                                                                                                                <div class="p-2 pl-4 pr-4">
+                                    <a href="https://play.google.com/store/apps/details?id=com.freedom.pay"><img src="https://freedompay.ca/public/uploads/app-store-logos/1630714514.png" class="img-responsive" width="125" height="50"/></a>
+                                </div>
+                                                                        </div>
+                </div>
+            </div>
+
+            <hr class="mb-2">
+            <div class="d-flex justify-content-between">
+                <div>
+                                        <p class="copyright mt-0">Copyright&nbsp;© 2021 &nbsp;&nbsp; FreeDom Pay | All Rights Reserved</p>
+                </div>
+
+                <div>
+                    <div class="container-select d-flex">
+                        <div>
+                            <i class="fa fa-globe"></i>
+                        </div>
+
+                        <div>
+                            <select class="select-custom mt-0" id="lang">
+                                                                <option selected value='en'> English</option>
+                                                                <option  value='ar'> عربى</option>
+                                                                <option  value='fr'> Français</option>
+                                                                <option  value='pt'> Português</option>
+                                                                <option  value='ru'> Русский</option>
+                                                                <option  value='es'> Español</option>
+                                                                <option  value='tr'> Türkçe</option>
+                                                                <option  value='ch'> 中文 (繁體)</option>
+                                                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+    <!--End Footer-->
+    <script src="https://freedompay.ca/resources/views/Themes/modern/assets/public/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://freedompay.ca/resources/views/Themes/modern/assets/public/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://freedompay.ca/resources/views/Themes/modern/assets/public/js/jquery.waypoints.min.js" type="text/javascript"></script>
+<script src="https://freedompay.ca/resources/views/Themes/modern/assets/public/js/main.js" type="text/javascript"></script>
+<script src="https://freedompay.ca/resources/views/Themes/modern/assets/public/js/moment.js" type="text/javascript"></script>
+
+<!--Google Analytics Tracking Code-->
+
+
+<script type="text/javascript">
+</script>
+
+<script type="text/javascript">
+
+	function log(log) {
+		console.log(log);
+	}
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+		}
+	});
+
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+
+	function resizeHeaderOnScroll() {
+		const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+		shrinkOn = 100,
+		headerEl = document.getElementById('js-header');
+		
+		if (headerEl) {
+			if (distanceY > shrinkOn) {
+				headerEl.classList.add("smaller-header");
+				$("#logo_container").attr('src', SITE_URL + '/public/frontend/images/logo_sm.png');
+			} else {
+				headerEl.classList.remove("smaller-header");
+				$("#logo_container").attr('src', SITE_URL + '/public/frontend/images/logo.png');
+			}
+		}
+	}
+	window.addEventListener('scroll', resizeHeaderOnScroll);
+
+	//Language script
+	$('#lang').on('change', function (e)
+	{
+		e.preventDefault();
+		lang = $(this).val();
+		url = 'https://freedompay.ca/change-lang';
+		$.ajax({
+			type: 'get',
+			url: url,
+			data: {lang: lang},
+			success: function (msg)
+			{
+				if (msg == 1)
+				{
+					location.reload();
+				}
+			}
+		});
+	});
+
+
+
+	
+// custom dropdown
+	
+function create_custom_dropdowns() {
+$('.select-custom').each(function(i, select) {
+	if (!$(this).next().hasClass('dropdown')) {
+	$(this).after('<div class="dropdown ' + ($(this).attr('class') || '') + '" tabindex="0"><span class="current"></span><div class="list"><ul></ul></div></div>');
+	var dropdown = $(this).next();
+	var options = $(select).find('option');
+	var selected = $(this).find('option:selected');
+	dropdown.find('.current').html(selected.data('display-text') || selected.text());
+	options.each(function(j, o) {
+		var display = $(o).data('display-text') || '';
+		dropdown.find('ul').append('<li class="option ' + ($(o).is(':selected') ? 'selected' : '') + '" data-value="' + $(o).val() + '" data-display-text="' + display + '">' + $(o).text() + '</li>');
+	});
+	}
+});
+}
+
+// Event listeners
+
+// Open/close
+$(document).on('click', '.dropdown', function(event) {
+$('.dropdown').not($(this)).removeClass('open');
+$(this).toggleClass('open');
+if ($(this).hasClass('open')) {
+	$(this).find('.option').attr('tabindex', 0);
+	$(this).find('.selected').focus();
+} else {
+	$(this).find('.option').removeAttr('tabindex');
+	$(this).focus();
+}
+});
+// Close when clicking outside
+$(document).on('click', function(event) {
+if ($(event.target).closest('.dropdown').length === 0) {
+	$('.dropdown').removeClass('open');
+	$('.dropdown .option').removeAttr('tabindex');
+}
+event.stopPropagation();
+});
+// Option click
+$(document).on('click', '.dropdown .option', function(event) {
+$(this).closest('.list').find('.selected').removeClass('selected');
+$(this).addClass('selected');
+var text = $(this).data('display-text') || $(this).text();
+$(this).closest('.dropdown').find('.current').text(text);
+$(this).closest('.dropdown').prev('select').val($(this).data('value')).trigger('change');
+});
+
+// Keyboard events
+$(document).on('keydown', '.dropdown', function(event) {
+var focused_option = $($(this).find('.list .option:focus')[0] || $(this).find('.list .option.selected')[0]);
+// Space or Enter
+if (event.keyCode == 32 || event.keyCode == 13) {
+	if ($(this).hasClass('open')) {
+	focused_option.trigger('click');
+	} else {
+	$(this).trigger('click');
+	}
+	return false;
+	// Down
+} else if (event.keyCode == 40) {
+	if (!$(this).hasClass('open')) {
+	$(this).trigger('click');
+	} else {
+	focused_option.next().focus();
+	}
+	return false;
+	// Up
+} else if (event.keyCode == 38) {
+	if (!$(this).hasClass('open')) {
+	$(this).trigger('click');
+	} else {
+	var focused_option = $($(this).find('.list .option:focus')[0] || $(this).find('.list .option.selected')[0]);
+	focused_option.prev().focus();
+	}
+	return false;
+// Esc
+} else if (event.keyCode == 27) {
+	if ($(this).hasClass('open')) {
+	$(this).trigger('click');
+	}
+	return false;
+}
+});
+
+$(document).ready(function() {
+create_custom_dropdowns();
+});
+
+</script>
+
+    <script>
+</script>
+</body>
